@@ -14,7 +14,7 @@
     <section class="py-6 bg-white">
       <h2 class="text-2xl font-bold text-lime-700 text-center mb-6 uppercase tracking-widest">Nos services</h2>
       <div class="flex flex-col gap-4 items-stretch px-2">
-        <div v-for="service in services" :key="service.title" class="flex flex-row items-center bg-lime-50 rounded-xl shadow p-4">
+        <div v-for="service in services" :key="service.title" class="flex flex-row items-center bg-lime-50 rounded-xl shadow p-4 mb-2">
           <span class="text-2xl mr-3">{{ service.icon }}</span>
           <div>
             <h3 class="font-semibold text-base text-lime-700 mb-1 uppercase tracking-wide">{{ service.title }}</h3>
@@ -23,11 +23,11 @@
         </div>
       </div>
     </section>
-    <!-- Points forts -->
+    <!-- Points forts (valeurs) -->
     <section class="py-8 bg-gradient-to-b from-lime-50 via-white to-cyan-50">
       <h2 class="uppercase text-2xl font-bold tracking-widest text-lime-700 text-center mb-6">Pourquoi nous choisir ?</h2>
       <div class="flex flex-col gap-4 items-stretch px-2">
-        <div v-for="point in pointsForts" :key="point.title" class="flex flex-row items-center p-4 rounded-xl bg-white/80 border border-lime-100 shadow">
+        <div v-for="point in pointsForts" :key="point.title" class="flex flex-row items-center p-4 rounded-xl bg-white/80 border border-lime-100 shadow mb-2">
           <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-br from-lime-200 to-lime-100 text-xl mr-3">{{ point.icon }}</span>
           <div>
             <h3 class="font-semibold text-lime-700 mb-1 uppercase tracking-wide text-sm">{{ point.title }}</h3>
