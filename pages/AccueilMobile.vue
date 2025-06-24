@@ -4,7 +4,7 @@
     <section class="flex flex-col items-center justify-center text-center min-h-[40vh] px-2 py-8">
       <img src="/logo-lignovert.png" alt="Logo Ligno Vert" class="w-20 h-20 mb-2 mx-auto" />
       <h1 class="uppercase text-3xl font-extrabold tracking-widest mb-3">
-        <span class="text-[#8B5C2A]">LIGNO</span>
+        <span class="text-red-700">LIGNO</span>
         <span class="text-green-700">VERT</span>
       </h1>
       <p class="text-base text-gray-700 mb-6 max-w-xs mx-auto">Le futur du paysagisme et de l'entretien d'espaces verts au Maroc</p>
