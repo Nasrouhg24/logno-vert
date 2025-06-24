@@ -4,6 +4,7 @@ import Header from '~/components/Header.vue'
 import HeaderMobile from '~/components/HeaderMobile.vue'
 import Footer from '~/components/Footer.vue'
 import FooterMobile from '~/components/FooterMobile.vue'
+import AccueilMobile from '~/pages/AccueilMobile.vue'
 
 const isMobile = ref(false)
 const checkMobile = () => {
@@ -22,7 +23,7 @@ onUnmounted(() => {
   <div>
     <component :is="isMobile ? HeaderMobile : Header" />
     <main class="flex-1 pt-20">
-      <NuxtPage />
+      <component :is="isMobile ? AccueilMobile : 'NuxtPage'" />
     </main>
     <component :is="isMobile ? FooterMobile : Footer" />
   </div>
