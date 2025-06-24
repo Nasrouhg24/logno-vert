@@ -1,34 +1,32 @@
 <template>
-  <div class="max-w-4xl mx-auto py-16 px-4">
-    <h1 class="text-4xl font-bold mb-8 text-green-700">À propos de LIGNO VERT</h1>
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-2">Notre histoire</h2>
-      <p class="text-lg">Fondée en 2016, LIGNO VERT est une entreprise marocaine spécialisée dans le paysagisme, l'aménagement, la création et l'entretien d'espaces verts extérieurs et intérieurs. Notre expertise va de l'étude technique à l'exécution sur le terrain, avec un souci constant de qualité, durabilité et innovation.</p>
+  <div class="bg-gradient-to-b from-white via-amber-50 to-lime-50 min-h-screen font-sans">
+    <!-- Hero Section -->
+    <section class="relative flex flex-col items-center justify-center text-center py-20 md:py-32 bg-[url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center">
+      <div class="absolute inset-0 bg-white/80 backdrop-blur-sm"></div>
+      <div class="relative z-10">
+        <h1 class="font-serif text-5xl md:text-6xl font-extrabold text-green-900 tracking-wide mb-6">Jardins parfaits</h1>
+        <p class="text-lg md:text-xl text-gray-700 mb-8">L'art du paysagisme, l'excellence au naturel</p>
+      </div>
+      <!-- SVG décoratif -->
+      <svg class="absolute bottom-0 left-0 w-32 h-32 text-lime-200 opacity-60" fill="none" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="currentColor"/></svg>
     </section>
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-2">Nos valeurs</h2>
-      <ul class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <li v-for="(value, i) in valeurs" :key="i" class="flex items-start gap-4 p-4 bg-green-50 rounded-xl shadow">
-          <Icon :name="value.icon" class="text-3xl text-green-600" />
-          <div>
-            <h3 class="font-bold">{{ value.title }}</h3>
-            <p class="text-sm">{{ value.desc }}</p>
-          </div>
-        </li>
-      </ul>
+
+    <!-- Histoire du nom -->
+    <section class="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="font-serif text-4xl font-bold text-green-900 tracking-wide mb-4">L'histoire derrière le nom</h2>
+        <p class="text-gray-600 text-lg leading-relaxed">LIGNO VERT incarne notre passion pour la nature et l'aménagement paysager. Notre nom reflète notre engagement à créer des espaces où chaque détail sublime l'environnement et l'harmonie des lieux.</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80" alt="Nature" class="w-full rounded-2xl shadow-lg object-cover h-72 md:h-96 transition hover:scale-105 duration-300" />
     </section>
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-2">Vision & Mission</h2>
-      <p class="text-lg">LIGNO VERT vise à être un acteur de référence du paysagisme au Maroc, en conjuguant excellence technique, engagement humain et impact positif sur l'environnement et les communautés.</p>
-    </section>
-    <section>
-      <h2 class="text-2xl font-semibold mb-2">Présence nationale</h2>
-      <ul class="list-disc ml-8 text-lg">
-        <li>Zone Nord-Est</li>
-        <li>Zone Centre</li>
-        <li>Zone Sud</li>
-        <li>Siège à Rabat</li>
-      </ul>
+
+    <!-- Notre philosophie -->
+    <section class="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-12 items-center">
+      <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80" alt="Philosophie" class="w-full rounded-2xl shadow-lg object-cover h-72 md:h-96 transition hover:scale-105 duration-300" />
+      <div>
+        <h2 class="font-serif text-4xl font-bold text-green-900 tracking-wide mb-4">Notre philosophie</h2>
+        <p class="text-gray-600 text-lg leading-relaxed">Chaque jardin est une extension de votre personnalité. Nous privilégions l'écoute, la créativité et le respect de l'environnement pour concevoir des aménagements uniques, esthétiques et durables.</p>
+      </div>
     </section>
   </div>
 </template>
