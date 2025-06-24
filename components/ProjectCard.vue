@@ -1,6 +1,6 @@
 <template>
-  <NuxtLink :to="`/projets/${projet.slug}`" class="block bg-white/10 backdrop-blur rounded-3xl border border-lime-200/20 shadow-2xl ring-1 ring-emerald-300/30 hover:scale-105 hover:shadow-green-400/50 hover:-translate-y-1 hover:rotate-1 transition-transform duration-300 group overflow-hidden">
-    <img :src="projet.image" :alt="projet.title" class="w-full h-40 object-cover rounded-t-3xl group-hover:scale-105 transition-transform duration-300" />
+  <NuxtLink :to="`/projets/${projet.slug}`" class="block bg-white/10 backdrop-blur rounded-3xl border border-lime-200/20 shadow-2xl ring-1 ring-emerald-300/30 hover:scale-105 hover:shadow-green-400/50 hover:-translate-y-1 transition-transform duration-300 group overflow-hidden">
+    <img :src="projet.image" :alt="projet.title" class="w-full h-56 object-cover rounded-t-3xl group-hover:scale-105 transition-transform duration-300" />
     <div class="p-6 space-y-4">
       <h3 class="font-bold text-lg text-green-800 mb-1 tracking-wide">{{ projet.title }}</h3>
       <p class="text-sm text-gray-600 mb-2 text-balance">{{ projet.client }}</p>
@@ -8,7 +8,6 @@
         <span class="flex items-center gap-1 bg-emerald-200 rounded-full px-3 py-1">{{ projet.location }}</span>
         <span class="flex items-center gap-1 bg-emerald-200 rounded-full px-3 py-1">{{ projet.date }}</span>
       </div>
-      <button class="mt-2 text-sm uppercase font-bold tracking-wide bg-emerald-100 text-green-800 rounded-full px-4 py-2 shadow hover:bg-green-800 hover:text-white transition">Voir le projet</button>
     </div>
   </NuxtLink>
 </template>
