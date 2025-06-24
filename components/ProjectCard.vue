@@ -1,19 +1,14 @@
 <template>
-  <NuxtLink :to="`/projets/${projet.slug}`" class="block bg-white/90 rounded-2xl border border-green-100 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 group overflow-hidden animate-fade-in">
-    <img :src="projet.image" :alt="projet.title" class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300" />
-    <div class="p-4">
-      <h3 class="font-bold text-lg text-green-800 mb-1">{{ projet.title }}</h3>
-      <p class="text-sm text-gray-600 mb-2">{{ projet.client }}</p>
+  <NuxtLink :to="`/projets/${projet.slug}`" class="block bg-white/10 backdrop-blur rounded-3xl border border-lime-200/20 shadow-2xl ring-1 ring-emerald-300/30 hover:scale-105 hover:shadow-green-400/50 hover:-translate-y-1 hover:rotate-1 transition-transform duration-300 group overflow-hidden">
+    <img :src="projet.image" :alt="projet.title" class="w-full h-40 object-cover rounded-t-3xl group-hover:scale-105 transition-transform duration-300" />
+    <div class="p-6 space-y-4">
+      <h3 class="font-bold text-lg text-green-800 mb-1 tracking-wide">{{ projet.title }}</h3>
+      <p class="text-sm text-gray-600 mb-2 text-balance">{{ projet.client }}</p>
       <div class="flex justify-between text-xs text-gray-500 items-center gap-2">
-        <span class="flex items-center gap-1">
-          <svg class="w-4 h-4 text-green-700" fill="currentColor" viewBox="0 0 24 24"><path d="M12,6A6,6 0 0,1 18,12C18,16.5 12,22 12,22C12,22 6,16.5 6,12A6,6 0 0,1 12,6M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8Z"/></svg>
-          {{ projet.location }}
-        </span>
-        <span class="flex items-center gap-1">
-          <svg class="w-4 h-4 text-green-700" fill="currentColor" viewBox="0 0 24 24"><path d="M19,4H18V2H16V4H8V2H6V4H5A2,2 0 0,0 3,6V20A2,2 0 0,0 5,22H19A2,2 0 0,0 21,20V6A2,2 0 0,0 19,4M19,20H5V9H19V20M7,11H9V13H7V11M11,11H13V13H11V11M15,11H17V13H15V11Z"/></svg>
-          {{ projet.date }}
-        </span>
+        <span class="flex items-center gap-1 bg-emerald-200 rounded-full px-3 py-1">{{ projet.location }}</span>
+        <span class="flex items-center gap-1 bg-emerald-200 rounded-full px-3 py-1">{{ projet.date }}</span>
       </div>
+      <button class="mt-2 text-sm uppercase font-bold tracking-wide bg-emerald-100 text-green-800 rounded-full px-4 py-2 shadow hover:bg-green-800 hover:text-white transition">Voir le projet</button>
     </div>
   </NuxtLink>
 </template>
